@@ -29,8 +29,8 @@ export const Tools = () => {
   }, [direction, isPaused]);
 
   return (
-    <div className="h-96 mt-10 ">
-         <p className='text-center m-auto mb-10'><TitleEffect text={"Tools"}  size={"text-5xl"}/></p>
+    <div className="h-50 md:h-96 mt-10 ">
+         <p className='text-center m-auto mb-3 md:mb-10'><TitleEffect text={"Tools"}  size={"text-5xl"}/></p>
     <div
       className="relative mx-auto flex items-center justify-around mb-[1rem] overflow-hidden"
       onMouseEnter={() => setIsPaused(true)}

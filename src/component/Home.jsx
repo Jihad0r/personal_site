@@ -15,7 +15,7 @@ export const Home = () => {
         </a>
       </div>
       <img className='hidden md:block w-1/3' src={img} alt="responsive" />
-      <div class="absolute top-0 opacity-50  w-full -z-1 h-[75vh]  md:h-3/4 bg-gradient-to-r from-blue-500 to-purple-600">
+      <div class="absolute top-0 opacity-50  w-full -z-1 h-[50vh]  md:h-3/4 bg-gradient-to-r from-blue-500 to-purple-600">
         <div class="absolute inset-0 bg-dot-pattern opacity-30 z-1"></div></div>
     </div>
   )
