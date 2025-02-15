@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+body{
+  background-color: #8c9de9ab;
+}
+@keyframes fadeText {
+  0%, 100% { width:100%; opacity: 1; }
+  50% { width: 0px; opacity: 0; }
+}
+.blurr{
+  color: (0.95 0.03 307.17 / 0);
+}
+.animate-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: fadeText 3s infinite ease-in-out;
+}
+ul div::before{
+  content: '';
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  top: 0;
+  left: -100%;
+  background-color: var(--main-color);
+  transition: .5s;
+}
+ul li{
+  transition: 1s;
+}
+ul .texthoverd:hover li{
+  padding: 0 2px;
+}
+
+ul .texthoverd:hover span{
+  display: block;
+}
+
+.bg-dot-pattern {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.5) 10%, transparent 10%);
+  background-size: 21px 21px;
+}
+
+span.title {
+  transition: opacity 3s, max-width 3s;
+  max-width: 0;
+  opacity: 0;
+  display: inline-block;
+  white-space: nowrap;
+}
+div:hover > span.title {
+  max-width: 100%;
+  opacity: 1;
+}
+
+.icon:hover img{
+  transition: 1s;
+  opacity: 1;
+  width: 160px;
+  height: 160px;
+}
+.project:hover img{
+  transition: .5s;
+  filter: blur(4px);
+  transform: scale(1.1);
+}
+.project:hover .links{
+  transition: .5s;
+  top: 5px;
+}
+.project:hover .description{
+  transition: .5s;
+  bottom: 0;
+}
