@@ -49,8 +49,8 @@ export const Contact = () => {
     <div className=" mt-10  ">
          <p className='text-center m-auto mb-10'><TitleEffect text={"Contact"}  size={"text-5xl"}/></p>
         <div className="flex justify-between items-center w-full p-4 mx-auto bg-white shadow-md rounded-lg" id="Contact">
-      {status && <p className="text-center text-green-500">{status}</p>}
       <form onSubmit={handleSubmit} className="space-y-4 flex-shrink-0 w-full md:w-1/2 bg-[#8c9de9ab] p-4 rounded-xl">
+      {status && <p className="text-center text-green-500">{status}</p>}
         <input
           type="text"
           name="firstName"
