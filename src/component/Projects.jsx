@@ -31,13 +31,13 @@ export const Projects = () => {
         🔗 GitHub Repo
       </a>
     </div>
-    <div className="description absolute -bottom-50 left-0 right-0 p-3 bg-gradient-to-r from-[oklch(0.56_0.29_302.32/_0.33)] to-[oklch(0.62_0.21_259.82/_0.33)] text-white overflow-hidden">
+    <div className="description absolute -bottom-60 left-0 right-0 p-3 bg-gradient-to-r from-[oklch(0.56_0.29_302.32/_0.33)] to-[oklch(0.62_0.21_259.82/_0.33)] text-white overflow-hidden">
       <p className="text-lg font-semibold">{repo.name}</p>
-      <p className="">{repo.description}</p>
+      <p className="text-sm">{repo.description}</p>
       <div className='flex'>
         Tools:
         {repo.languages.map((lang, index) => (
-          <p className='m-3' key={index}>{lang}</p>
+          <p className='m-3 text-sm' key={index}>{lang}</p>
         ))}
       </div>
     </div>

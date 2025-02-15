@@ -44,10 +44,10 @@ export const Tools = () => {
       {tools.map((tool, index) => (
         <div
         key={index}
-        className="icon flex-shrink-0 mr-4 pb-5 pt-5 w-[32%] h-60 text-center rounded-lg shadow-md bg-gradient-to-r from-[oklch(0.56_0.29_302.32/_0.33)] to-[oklch(0.62_0.21_259.82/_0.33)]"
+        className="icon flex-shrink-0 mr-4 pb-5 pt-5 w-[27%]  md:w-[32%] h-60 text-center rounded-lg shadow-md bg-gradient-to-r from-[oklch(0.56_0.29_302.32/_0.33)] to-[oklch(0.62_0.21_259.82/_0.33)]"
       >
       
-          <img src={tool.icon} alt={tool.name} className="w-35 h-35 mx-auto opacity-90" />
+          <img src={tool.icon} alt={tool.name} className="w-29 h-29 md:w-35  md:h-35 mx-auto opacity-90" />
           <p className="mt-3 text-lg font-semibold">{tool.name}</p>
         </div>
       ))}

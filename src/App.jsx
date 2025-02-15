@@ -17,7 +17,7 @@ function App() {
       <Contact/>
     </div>
     <ScrollUpButton />
-    <div className="copyright bg-black p-4 mt-10  text-white text-center">Made With Love By Jihad Mohammed © {year}</div></>
+    <footer className="copyright bg-black p-4 mt-10  text-white text-center">Made With Love By Jihad Mohammed © {year}</footer></>
   )
 }
 
