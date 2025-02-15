@@ -25,9 +25,9 @@ const scrollToSection = (id) => {
 };
 
 export const TextHover = ({text}) => {
-  const {toggleMenu} = useMenuStore()
+  const {menuOpen,toggleMenu} = useMenuStore()
   return (
-    <div  onClick={() => { scrollToSection(text); toggleMenu();}} className="texthoverd flex items-center w-fit font-bold ml-4 mr-3 p-2 cursor-pointer text-1xl md:text-sm md:ml-0 md:p-0 ">
+    <div  onClick={() => { scrollToSection(text);{menuOpen? toggleMenu():"" }}} className="texthoverd flex items-center w-fit font-bold ml-4 mr-3 p-2 cursor-pointer text-1xl md:text-sm md:ml-0 md:p-0 ">
       <span className='hidden'>{"{"}</span>
       <li className="">{text}</li>
       <span className='hidden'>{"}"}</span>
